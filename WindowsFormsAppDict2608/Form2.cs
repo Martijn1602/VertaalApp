@@ -52,9 +52,9 @@ namespace WindowsFormsAppDict2608
         {
             KeyValuePair<string, string> pair = (KeyValuePair<string, string>) cbVertaling.SelectedItem;
             mijnDictionary.Remove(pair.Key);
-            //cbVertaling.DataSource = new BindingSource(mijnDictionary, null);
-            //cbVertaling.DisplayMember = "Key";
-            //cbVertaling.ValueMember = "Value";
+            cbVertaling.DataSource = new BindingSource(mijnDictionary, null);
+            cbVertaling.DisplayMember = "Key";
+            cbVertaling.ValueMember = "Value";
         }
     }
 }
